@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagePatientActivity">
+
+    <TextView
+        android:id="@+id/APViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="환자정보수정"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/APViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름 :"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APViewTitle" />
+
+    <TextView
+        android:id="@+id/APViewBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="생년월일 :"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APViewName" />
+
+    <TextView
+        android:id="@+id/APViewGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="성별 :"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APViewBirthday" />
+
+    <TextView
+        android:id="@+id/APViewDisease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="증상 :"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APViewGender" />
+
+    <TextView
+        android:id="@+id/APViewRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="특이사항 :"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APViewDisease" />
+
+    <RadioButton
+        android:id="@+id/APRadioButtonM"
+        android:layout_width="91dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="남자"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/APRadioButtonW"
+        app:layout_constraintStart_toEndOf="@+id/APViewGender"
+        app:layout_constraintTop_toBottomOf="@+id/MPViewRealBirthday" />
+
+    <RadioButton
+        android:id="@+id/APRadioButtonW"
+        android:layout_width="89dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="여자"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MPViewRealBirthday" />
+
+    <TextView
+        android:id="@+id/APViewRealRecode"
+        android:layout_width="259dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp"
+        android:text="수정사항(눌러서 수정)"
+        android:textSize="25sp"
+        android:background="@drawable/edge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/APViewRecord"
+        app:layout_constraintTop_toBottomOf="@+id/MPViewRealDisease" />
+
+    <TextView
+        android:id="@+id/MPViewRealName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="홍길동"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/APViewName"
+        app:layout_constraintTop_toBottomOf="@+id/APViewTitle" />
+
+    <TextView
+        android:id="@+id/MPViewRealBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="1111/11/11"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/APViewBirthday"
+        app:layout_constraintTop_toBottomOf="@+id/MPViewRealName" />
+
+    <TextView
+        android:id="@+id/MPViewRealDisease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="치매"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/APViewDisease"
+        app:layout_constraintTop_toBottomOf="@+id/APRadioButtonW" />
+
+    <Button
+        android:id="@+id/APButtonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수정"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APViewRealRecode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

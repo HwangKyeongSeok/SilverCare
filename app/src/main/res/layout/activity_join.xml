@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinActivity">
+
+    <TextView
+        android:id="@+id/AFViewJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시설참가"
+        android:textSize="40sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AFView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시 :"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AFViewJoin" />
+
+    <TextView
+        android:id="@+id/AFView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="구/군/면 :"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AFView1" />
+
+    <TextView
+        android:id="@+id/AFView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="면/읍/동 : "
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AFView2" />
+
+    <TextView
+        android:id="@+id/AFViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시설이름 :"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AFView3" />
+
+    <EditText
+        android:id="@+id/AFText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AFViewJoin" />
+
+    <EditText
+        android:id="@+id/AFText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AFText1" />
+
+    <EditText
+        android:id="@+id/AFText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AFText2" />
+
+    <EditText
+        android:id="@+id/AFText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AFText3" />
+
+    <Button
+        android:id="@+id/AFButtonJoin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="참가"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AFViewName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

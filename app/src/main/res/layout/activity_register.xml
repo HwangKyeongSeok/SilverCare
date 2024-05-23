@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/RegisterViewEmail"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="280dp"
+        android:text="이메일 : "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterViewPhone"
+        />
+
+    <TextView
+        android:id="@+id/RegisterViewPhone"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="전화번호 :"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterViewPassword" />
+
+    <TextView
+        android:id="@+id/RegisterViewId"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="280dp"
+        android:text="아이디 : "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterViewRegister" />
+
+    <TextView
+        android:id="@+id/RegisterViewRegister"
+        android:layout_width="212dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="회원가입"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/RegisterViewPassword"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginTop="50dp"
+        android:text="비밀번호 : "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterViewName" />
+
+    <EditText
+        android:id="@+id/RegisterTextId"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/RegisterViewId"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <EditText
+        android:id="@+id/RegisterTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/RegisterViewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterTextName" />
+
+    <EditText
+        android:id="@+id/RegisterTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="PhoneNumber"
+        android:inputType="phone"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/RegisterViewPhone"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterTextPassword" />
+
+    <EditText
+        android:id="@+id/RegisterTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="E-mail"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/RegisterViewEmail"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterTextPhone" />
+
+    <Button
+        android:id="@+id/RegisterButtonRegister"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:text="Register"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/RegisterViewRegister"
+        app:layout_constraintStart_toStartOf="@+id/RegisterViewRegister"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterCheckUser" />
+
+    <TextView
+        android:id="@+id/RegisterViewName"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginTop="50dp"
+        android:text="이름 :"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterViewId" />
+
+    <EditText
+        android:id="@+id/RegisterTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/RegisterViewName"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterTextId" />
+
+    <Button
+        android:id="@+id/RegisterButtonCancel"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:text="Cancel"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/RegisterViewRegister"
+        app:layout_constraintStart_toEndOf="@+id/RegisterViewRegister"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterCheckAdmin" />
+
+    <CheckBox
+        android:id="@+id/RegisterCheckUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="직원"
+        app:layout_constraintStart_toEndOf="@+id/RegisterViewCategory"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterTextEmail" />
+
+    <CheckBox
+        android:id="@+id/RegisterCheckAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="관리자"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/RegisterCheckUser"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterTextEmail" />
+
+    <TextView
+        android:id="@+id/RegisterViewCategory"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginTop="50dp"
+        android:text="사용자 유형 : "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterViewEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

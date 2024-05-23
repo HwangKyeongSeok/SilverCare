@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.list.StaffListFragment">
+
+    <TextView
+        android:id="@+id/WLViewName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름 :"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/WLViewName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름 :"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WLViewName1" />
+
+    <TextView
+        android:id="@+id/UserListViewName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름 :"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WLViewName2" />
+
+    <TextView
+        android:id="@+id/WLViewName4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름 :"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserListViewName3" />
+
+    <TextView
+        android:id="@+id/WLViewName5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름 :"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WLViewName4" />
+
+    <TextView
+        android:id="@+id/WLViewNam6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름 :"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WLViewName5" />
+
+    <TextView
+        android:id="@+id/WLViewName7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름 :"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WLViewNam6" />
+
+    <TextView
+        android:id="@+id/WLViewName8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름 :"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WLViewName7" />
+
+    <TextView
+        android:id="@+id/WLViewName9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름 :"
+        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WLViewName8" />
+
+    <Button
+        android:id="@+id/WLButtonPrint1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관리"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/WLButtonPrint2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관리"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WLButtonPrint1" />
+
+    <Button
+        android:id="@+id/WLButtonPrint3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관리"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WLButtonPrint2" />
+
+    <Button
+        android:id="@+id/WLButtonPrint4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관리"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WLButtonPrint3" />
+
+    <Button
+        android:id="@+id/WLButtonPrint5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관리"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WLButtonPrint4" />
+
+    <Button
+        android:id="@+id/WLButtonPrint6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관리"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WLButtonPrint5" />
+
+    <Button
+        android:id="@+id/WLButtonPrint7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관리"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WLButtonPrint6" />
+
+    <Button
+        android:id="@+id/WLButtonPrint8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관리"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WLButtonPrint7" />
+
+    <Button
+        android:id="@+id/WLButtonPrint9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관리"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WLButtonPrint8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

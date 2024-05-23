@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_list">
+
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="com.example.sivercare.ui.more.StaffMoreFragment"
+        android:label="@string/title_more"
+        tools:layout="@layout/fragment_staffmore" />
+
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="com.example.sivercare.ui.list.StaffListFragment"
+        android:label="@string/title_List"
+        tools:layout="@layout/fragment_stafflist" />
+
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="com.example.sivercare.ui.Info.StaffInfoFragment"
+        android:label="@string/title_Info"
+        tools:layout="@layout/fragment_staffinfo" />
+</navigation>

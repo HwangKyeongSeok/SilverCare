@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkActivity">
+
+    <TextView
+        android:id="@+id/WorkViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="근무현황"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/WorkViewMon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="월요일 :"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WorkViewSubTitle" />
+
+    <TextView
+        android:id="@+id/WorkViewTue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="화요일 :"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WorkViewMon" />
+
+    <TextView
+        android:id="@+id/WorkViewWed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수요일 :"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WorkViewTue" />
+
+    <TextView
+        android:id="@+id/WorkViewThu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="목요일 :"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WorkViewWed" />
+
+    <TextView
+        android:id="@+id/WorkViewFri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="금요일 :"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WorkViewThu" />
+
+    <TextView
+        android:id="@+id/WorkViewSat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="토요일 :"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WorkViewFri" />
+
+    <TextView
+        android:id="@+id/WorkViewSun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="일요일 :"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WorkViewSat" />
+
+    <TextView
+        android:id="@+id/WorkViewSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최근 일주일"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WorkViewTitle" />
+
+    <Button
+        android:id="@+id/WorkButtonEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WorkViewSun" />
+</androidx.constraintlayout.widget.ConstraintLayout>

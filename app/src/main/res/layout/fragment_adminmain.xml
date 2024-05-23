@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.adminmain.AdminMainFragment">
+
+    <Button
+        android:id="@+id/AdminMainButtonPatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="환자목록"
+        android:textSize="50sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AdminMainButtonPrintWork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="근무상황출력"
+        android:textSize="50sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AdminMainButtonPatient" />
+
+    <Button
+        android:id="@+id/AdminMainManageStaff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="직원관리"
+        android:textSize="50sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AdminMainButtonPrintWork" />
+
+    <Button
+        android:id="@+id/AdminMainButtonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        android:textSize="50sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AdminMainManageStaff" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPatientActivity">
+
+    <TextView
+        android:id="@+id/APViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="환자추가"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/APViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름 :"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APViewTitle" />
+
+    <TextView
+        android:id="@+id/APViewBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="생년월일 :"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APViewName" />
+
+    <TextView
+        android:id="@+id/APViewGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="성별 :"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APViewBirthday" />
+
+    <TextView
+        android:id="@+id/APViewDisease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="증상 :"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APViewGender" />
+
+    <TextView
+        android:id="@+id/APViewRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="특이사항 :"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APViewDisease" />
+
+    <RadioButton
+        android:id="@+id/APRadioButtonM"
+        android:layout_width="91dp"
+        android:layout_height="42dp"
+        android:text="남자"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/APRadioButtonW"
+        app:layout_constraintStart_toEndOf="@+id/APViewGender"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <RadioButton
+        android:id="@+id/APRadioButtonW"
+        android:layout_width="89dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="20dp"
+        android:text="여자"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <TextView
+        android:id="@+id/APViewRealRecode"
+        android:layout_width="259dp"
+        android:layout_height="228dp"
+        android:background="@drawable/edge"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp"
+        android:hint="입력"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/APViewRecord"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <Button
+        android:id="@+id/APButtonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="추가하기"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APViewRealRecode" />
+
+    <EditText
+        android:id="@+id/APTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/APViewName"
+        app:layout_constraintTop_toBottomOf="@+id/APViewTitle" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/APViewBirthday"
+        app:layout_constraintTop_toBottomOf="@+id/APTextName" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/APViewDisease"
+        app:layout_constraintTop_toBottomOf="@+id/APRadioButtonM" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

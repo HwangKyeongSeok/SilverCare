@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sivercare</string>
+    <string name="title_activity_staff_main">StaffMainActivity</string>
+    <string name="title_more">더보기</string>
+    <string name="title_List">리스트</string>
+    <string name="title_Info">내정보</string>
+    <string name="title_activity_admin_main">AdminMainActivity</string>
+    <string name="title_main">메인</string>
+</resources>

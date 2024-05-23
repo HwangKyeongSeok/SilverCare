@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/navigation_adminmain">
+
+    <fragment
+        android:id="@+id/navigation_adminmain"
+        android:name="com.example.sivercare.ui.adminmain.AdminMainFragment"
+        android:label="@string/title_main"
+        tools:layout="@layout/fragment_adminmain" />
+
+    <fragment
+        android:id="@+id/navigation_admininfo"
+        android:name="com.example.sivercare.ui.admininfo.AdminInfoFragment"
+        android:label="@string/title_Info"
+        tools:layout="@layout/fragment_admininfo" />
+</navigation>
