@@ -1,47 +1,10 @@
 package com.example.sivercare.ui.adminmain;
 
-<<<<<<< HEAD
-=======
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
->>>>>>> 5e27fa0 ([구현] 로그인, 회원가입, 로그아웃 기능 구현)
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-<<<<<<< HEAD
-import android.widget.TextView;
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
-
-import com.example.sivercare.databinding.FragmentAdminmainBinding;
-
-
-public class AdminMainFragment extends Fragment {
-
-    private FragmentAdminmainBinding binding;
-
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        AdminMainViewModel adminMainViewModel =
-                new ViewModelProvider(this).get(AdminMainViewModel.class);
-
-        binding = FragmentAdminmainBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
-
-        return root;
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
-}
-=======
 import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -71,10 +34,11 @@ public class AdminMainFragment extends Fragment {
     }
 
     private void logout() {
-        SharedPreferences preferences = getActivity().getSharedPreferences("user_prefs", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.clear();
-        editor.apply();
+        // 사용자 세션 데이터를 제거합니다 (필요시 SharedPreferences 등을 사용하여 세션 데이터를 관리할 수 있습니다)
+        // SharedPreferences preferences = getActivity().getSharedPreferences("user_prefs", Context.MODE_PRIVATE);
+        // SharedPreferences.Editor editor = preferences.edit();
+        // editor.clear();
+        // editor.apply();
 
         // 로그인 화면으로 이동합니다
         Intent intent = new Intent(getActivity(), LoginActivity.class);
@@ -85,4 +49,3 @@ public class AdminMainFragment extends Fragment {
         getActivity().finish();
     }
 }
->>>>>>> 5e27fa0 ([구현] 로그인, 회원가입, 로그아웃 기능 구현)

@@ -11,12 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sivercare"
-<<<<<<< HEAD
-        tools:targetApi="31">
-=======
         tools:targetApi="31"
         tools:ignore="ExtraText">
->>>>>>> 5e27fa0 ([구현] 로그인, 회원가입, 로그아웃 기능 구현)
         <activity
             android:name=".AdminMainActivity"
             android:exported="false"
@@ -58,13 +54,7 @@
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
-<<<<<<< HEAD
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-    </application>
 
-=======
         <activity android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
@@ -77,5 +67,4 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="32"
         tools:ignore="ScopedStorage" />
->>>>>>> 5e27fa0 ([구현] 로그인, 회원가입, 로그아웃 기능 구현)
 </manifest>

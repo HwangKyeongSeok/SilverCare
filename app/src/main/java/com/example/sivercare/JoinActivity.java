@@ -1,29 +1,5 @@
 package com.example.sivercare;
 
-<<<<<<< HEAD
-import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-public class JoinActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_join);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-    }
-}
-=======
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -112,4 +88,3 @@ public class JoinActivity extends AppCompatActivity {
         }
     }
 }
->>>>>>> 5e27fa0 ([구현] 로그인, 회원가입, 로그아웃 기능 구현)

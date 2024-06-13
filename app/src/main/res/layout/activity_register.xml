@@ -75,16 +75,11 @@
         android:ems="10"
         android:hint="ID"
         android:inputType="text"
-<<<<<<< HEAD
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterViewRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/RegisterViewId"
         tools:layout_editor_absoluteY="98dp" />
-=======
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/RegisterViewId"
-        app:layout_constraintTop_toBottomOf="@+id/RegisterViewRegister" />
->>>>>>> 5e27fa0 ([구현] 로그인, 회원가입, 로그아웃 기능 구현)
 
     <EditText
         android:id="@+id/RegisterTextPassword"
@@ -131,7 +126,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/RegisterViewRegister"
         app:layout_constraintStart_toStartOf="@+id/RegisterViewRegister"
-        app:layout_constraintTop_toBottomOf="@+id/RegisterCheckUser" />
+        app:layout_constraintTop_toBottomOf="@+id/RegisterRadioUser" />
 
     <TextView
         android:id="@+id/RegisterViewName"
@@ -166,28 +161,30 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/RegisterViewRegister"
         app:layout_constraintStart_toEndOf="@+id/RegisterViewRegister"
-        app:layout_constraintTop_toBottomOf="@+id/RegisterCheckAdmin" />
+        app:layout_constraintTop_toBottomOf="@+id/RegisterRadioAdmin" />
 
-    <CheckBox
-        android:id="@+id/RegisterCheckUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
-        android:text="직원"
-        app:layout_constraintStart_toEndOf="@+id/RegisterViewCategory"
-        app:layout_constraintTop_toBottomOf="@+id/RegisterTextEmail" />
-
-    <CheckBox
-        android:id="@+id/RegisterCheckAdmin"
+    <RadioGroup
+        android:id="@+id/radioGroupUserType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="관리자"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toEndOf="@+id/RegisterCheckUser"
-        app:layout_constraintTop_toBottomOf="@+id/RegisterTextEmail" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterTextEmail"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/RegisterRadioUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="직원" />
+
+        <RadioButton
+            android:id="@+id/RegisterRadioAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="관리자" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/RegisterViewCategory"
